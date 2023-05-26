@@ -1,0 +1,45 @@
+<header>
+  <app-header></app-header>
+</header>
+
+<!-- banner -->
+<div class="card text-bg-dark">
+  <img class=" " width="100%" height="270px" src="https://mapacademy.io/wp-content/uploads/2022/03/Textile-Traditions-from-Punjab_-Phulkaris-and-Baghs.jpg" class="card-img"
+      alt="...">
+  <div class="card-img-overlay mt-5">
+      <h1 class="card-title mt-5 text-center text-white">OUR SHOPS</h1>
+  </div>
+</div>
+
+
+
+<div class="container mt-5">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active"><a href="#">Shop</a></li>
+    </ol>
+  </nav>
+</div>
+
+
+
+<div class="container text-center mt-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let shop of allshops">
+      <div class="card">
+        <img height="250px" [src]="shop.shopimageurl" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h2 class="card-title"><span class="fw-bold">Store Name : </span>{{shop.shopname}}</h2>
+          <p class="card-text">{{shop.shopemail}}</p>
+          <p class="card-text">{{shop.shopphone}}</p>
+          <p class="card-text"><span class="fw-bold">Address : </span> {{shop.shopaddress.slice(0,20)}}...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <app-footer></app-footer>
+</footer>

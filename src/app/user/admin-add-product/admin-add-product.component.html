@@ -1,0 +1,51 @@
+<app-admin-header></app-admin-header>
+
+<div class="container mt-4 ">
+    <h1 class="text-primary text-center">Add New Product</h1>
+    <div class="row">
+        <div class="col-md-6 mt-5">
+            
+            <form class="row g-3" [formGroup]="addproductForm" (ngSubmit)="addproduct()">
+                <div class="col-md-6">
+                    <label for="validationDefault01" class="form-label">Product name</label>
+                    <input name="productname" formControlName="productname" type="text" class="form-control" id="validationDefault01"  required>
+                </div>
+                <div *ngIf="this.addproductForm.get('productname')?.errors&&this.addproductForm.get('productname')?.touched"
+                class="text-danger mt-1 mb-2">
+                Invalid Prodct Name</div>
+
+                <div class="col-md-6">
+                    <label for="validationDefault02" class="form-label">Small Description</label>
+                    <input name="smalldesc" formControlName="smalldesc" type="text" class="form-control" id="validationDefault02"  required>
+                </div>
+                <div *ngIf="this.addproductForm.get('smalldesc')?.errors&&this.addproductForm.get('smalldesc')?.touched"
+                class="text-danger mt-1 mb-2">
+                Enter Small Description</div>
+
+                <div class="col-md-6">
+                    <label for="validationDefault01" class="form-label">Sub Heading</label>
+                    <input name="subheading" formControlName="subheading" type="text" class="form-control" id="validationDefault01"  required>
+                </div>
+                <div *ngIf="this.addproductForm.get('subheading')?.errors&&this.addproductForm.get('subheading')?.touched"
+                class="text-danger mt-1 mb-2">
+                Enter a Sub Heading</div>
+
+                <div class="col-md-6">
+                    <label for="validationDefault02" class="form-label">Description</label>
+                    <input name="description" formControlName="description" type="text" class="form-control" id="validationDefault02"  required>
+                </div>
+                <div *ngIf="this.addproductForm.get('description')?.errors&&this.addproductForm.get('description')?.touched"
+                class="text-danger mt-1 mb-2">
+                Enter Description of the Product</div>
+
+                <div class="col-md-6">
+                    <label for="validationDefault02" class="form-label">Image Link</label>
+                    <input name="imageurl" formControlName="imageurl" type="text" class="form-control" id="validationDefault02"  required>
+                </div>
+                <button class="btn btn-success mt-4 mb-4">Add Item</button>
+            </form>
+
+        </div>
+        <div class="col-md-6 mt-5"></div>
+    </div>
+</div>

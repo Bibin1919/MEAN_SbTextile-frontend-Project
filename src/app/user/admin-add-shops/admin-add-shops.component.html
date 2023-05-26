@@ -1,0 +1,64 @@
+<app-admin-header></app-admin-header>
+
+<div class="container mt-4 ">
+    <h1 class="text-primary text-center">Add New Shop</h1>
+    <div class="row">
+        <div class="col-md-6 mt-5">
+
+            <form class="row g-3" [formGroup]="addshopForm" (ngSubmit)="addshop()">
+                <div class="col-md-6">
+                    <label for="validationDefault01" class="form-label">Shop Name</label>
+                    <input name="shopname" formControlName="shopname" type="text" class="form-control"
+                        id="validationDefault01" required>
+                    <div *ngIf="this.addshopForm.get('shopname')?.errors&&this.addshopForm.get('shopname')?.touched"
+                        class="text-danger mt-1 mb-2">
+                        Invalid Shop Name</div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <label for="validationDefault02" class="form-label">Shop Email</label>
+                    <input name="shopemail" formControlName="shopemail" type="text" class="form-control"
+                        id="validationDefault02" required>
+                    <div *ngIf="this.addshopForm.get('shopemail')?.errors&&this.addshopForm.get('shopemail')?.touched"
+                        class="text-danger mt-1 mb-2">
+                        Enter Email</div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <label for="validationDefault01" class="form-label">Phone</label>
+                    <input name="shopphone" formControlName="shopphone" type="text" class="form-control"
+                        id="validationDefault01" required>
+                    <div *ngIf="this.addshopForm.get('shopphone')?.errors&&this.addshopForm.get('shopphone')?.touched"
+                        class="text-danger mt-1 mb-2">
+                        Enter Phone Number</div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <label for="validationDefault02" class="form-label">Address</label>
+                    <input name="shopaddress" formControlName="shopaddress" type="text" class="form-control"
+                        id="validationDefault02" required>
+                    <div *ngIf="this.addshopForm.get('shopaddress')?.errors&&this.addshopForm.get('shopaddress')?.touched"
+                        class="text-danger mt-1 mb-2">
+                        Enter Address</div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <label for="validationDefault02" class="form-label">Image_Url</label>
+                    <input name="shopimageurl" formControlName="shopimageurl" type="text" class="form-control"
+                        id="validationDefault02" required>
+                    <div *ngIf="this.addshopForm.get('shopimageurl')?.errors&&this.addshopForm.get('shopimageurl')?.touched"
+                        class="text-danger mt-1 mb-2">
+                        Paste Image Url</div>
+                </div>
+
+                <button class="btn btn-success mt-4 mb-4">Add Item</button>
+            </form>
+
+        </div>
+        <div class="col-md-6 mt-5"></div>
+    </div>
+</div>

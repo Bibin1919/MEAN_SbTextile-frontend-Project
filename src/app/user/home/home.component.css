@@ -1,0 +1,43 @@
+#carouselExampleAutoplaying img {
+    height: 580px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#facts img {
+    height: 70px;
+    width: 70px;
+}
+
+#carouselExampleDark img {
+    border-radius: 10px;
+    height: 250px;
+}
+
+#carouselExampleDark .text-white {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#category .card img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+
+#category .card:hover img {
+  transform: scale(1.1);
+}
+#infrastructure .col img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+  }
+  
+  #infrastructure .col:hover img {
+    transform: scale(1.1);
+  }

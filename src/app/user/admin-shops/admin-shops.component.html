@@ -1,0 +1,29 @@
+<app-admin-header></app-admin-header>
+
+
+<div class="container mt-5 ">
+  <a routerLink="/user/admin-add-shops" class="btn btn-primary mb-5">Add New Shop</a>
+  <div class="row">
+    <div class="col-md-6 " *ngFor="let shop of allshops">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img [src]="shop.shopimageurl" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <ul>
+                <h2 class="card-title">{{shop.shopname}}</h2>
+              <li><p class="card-text">Email : {{shop.shopemail}}</p></li>
+              <li><p class="card-text">Phone : {{shop.shopphone}}</p></li>
+              <li><p class="card-text"><span class="fw-bold">Address : </span>{{shop.shopaddress}}</p></li>
+              <button class="btn btn-danger mb-3"><button (click)="removeshop(shop._id)" class="btn btn-danger"><i
+                    class="fa fa-trash" aria-hidden="true"></i></button></button>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

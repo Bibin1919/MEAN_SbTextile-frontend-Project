@@ -1,0 +1,8 @@
+.bg-login-image {
+    background: url("https://t3.ftcdn.net/jpg/03/48/55/20/360_F_348552050_uSbrANL65DNj21FbaCeswpM33mat1Wll.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .container{
+    background-color: aliceblue;
+  }

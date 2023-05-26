@@ -1,0 +1,95 @@
+
+ <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="./about-us">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Yarn</a></li>
+                                <li><a class="dropdown-item" href="#">Fabrics</a></li>
+                                <li><a class="dropdown-item" href="#">Garments</a></li>
+                                <li><a class="dropdown-item" href="#">Home Textile</a></li>
+                                <li><a class="dropdown-item" href="#">Organic Products</a></li>
+                                <li><a class="dropdown-item" href="#">Face Mask</a></li>
+                                <li><a class="dropdown-item" href="#">PPE Kits</a></li>
+                                <li><a class="dropdown-item" href="#">Agents/Dealers</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Face Mask</a></li>
+                                <li><a class="dropdown-item" href="#">PPE Kits</a></li>
+                                <li><a class="dropdown-item" href="#">Face Shield</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Careers</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn  position-relative">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                  0
+                                  <span class="visually-hidden">unread messages</span>
+                                </span>
+                              </button>
+                        </li>
+
+
+  <h2>Login</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input name="username" formControlName="username" type="text" class="form-control" id="username"
+            placeholder="Enter username">
+        </div>
+        <div *ngIf="this.loginForm.get('username')?.errors&&this.loginForm.get('username')?.touched"
+          class="text-danger mt-1 mb-2">
+          Invalid Username</div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input name="password" formControlName="password" type="password" class="form-control" id="password"
+            placeholder="Enter password">
+        </div>
+        <div *ngIf="this.loginForm.get('password')?.errors&&this.loginForm.get('password')?.touched"
+          class="text-danger mt-1 mb-2">
+          Invalid Password</div>
+
+        <button type="submit" class="btn btn-primary mt-3 mb-5">Login</button>
+      </form>
+
+ <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img height="300px" width="300px"
+              src="https://a-static.besthdwallpaper.com/lake-view-by-snowy-mountain-at-sunset-wallpaper-1280x1024-108539_32.jpg"
+              class="d-block w-100 " alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1">Leading Indian Textile Group Since 1896</h5>
+              
+            </div>
+          </div>
+        </div>
+      </div>

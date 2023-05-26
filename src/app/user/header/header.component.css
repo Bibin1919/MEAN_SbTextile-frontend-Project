@@ -1,0 +1,25 @@
+.navbar-brand {
+    margin-left: 5%;
+    font-size: 30px;
+}
+
+a {
+    color: green;
+    font-weight: 500;
+    font-size: 19px;
+    margin-right: 2px;
+}
+
+a:hover {
+    color: black;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.dropdown-menu .dropdown-item{
+    font-weight: 400;
+   
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: rgba(128, 128, 128, 0.384);
+   
+}
