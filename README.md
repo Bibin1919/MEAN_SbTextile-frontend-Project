@@ -5,3 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 **Demo Link**
 
 https://sbtextiles.netlify.app/
+
+Admin-
+  Username : admin 
+  Password : admin
