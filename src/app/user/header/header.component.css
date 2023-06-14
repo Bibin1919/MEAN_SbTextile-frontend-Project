@@ -10,6 +10,11 @@ a {
     margin-right: 2px;
 }
 
+.head{
+    font-family: 'Monoton', cursive;
+    font-size: 44px;
+}
+
 a:hover {
     color: black;
     background-color: aliceblue;
