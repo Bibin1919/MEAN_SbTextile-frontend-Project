@@ -1,53 +1,36 @@
-<nav class="navbar bg-body-tertiary ">
-    <div class="container-fluid ">
-        <a class="navbar-brand btn" routerLink="/">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand " routerLink="/">
             <span class="head text-danger">SB</span>
-            <span class="text-success p-2">Textile Manufacturer & Supplier</span>
+            <span class="text-success ">Textile Manufacturer & Supplier</span>
         </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="nav justify-content-end">
 
-        <!-- nav -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" routerLink="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/user/about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/user/products">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/user/shop">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/user/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/user/login">Admin Login </a>
+            </li>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" routerLink="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/user/about-us">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/user/products">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/user/shop">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/user/contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/user/login">Admin Login </a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <button type="button" class="btn  position-relative">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    0
-                                    <span class="visually-hidden">unread messages</span>
-                                </span>
-                            </button>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
